@@ -16,11 +16,16 @@ public class Student extends Person {
         super("Jerry", "Seinfeld");
         this.classYear = 2024;
     }
-
+    @Override
     // toString()
     public String toString() {
         String str = this.getFirstName() + " " + this.getLastName() + ", " + this.classYear;
         return str;
+    }
+
+    @Override
+    public void doSomething() {
+        System.out.println("I am studying");
     }
 
     // Getters
